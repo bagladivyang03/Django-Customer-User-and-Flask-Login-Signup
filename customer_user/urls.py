@@ -19,4 +19,5 @@ from first_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/',include('first_app.urls')),
+    path('logout/',views.user_logout,name='logout'),
 ]
